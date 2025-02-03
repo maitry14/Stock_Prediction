@@ -15,8 +15,8 @@ st.header("A Basic Data Science Web Application")
 st.sidebar.header("Geeksforgeeks \n TrueGeeks")
 
 # Fetch real-time stock data
-company1 = get_ticker("GOOGL")
-company2 = get_ticker("MSFT")
+company1 = yf.Ticker("GOOGL")
+company2 = yf.Ticker("MSFT")
 google = company1.history(period="1y")  # 1 year of data
 microsoft = company2.history(period="1y")
 
