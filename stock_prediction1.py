@@ -1,5 +1,5 @@
 import streamlit as st
-import yfinance as finance
+import yfinance as yf
 import matplotlib.pyplot as plt
 import pandas as pd
 from prophet import Prophet
